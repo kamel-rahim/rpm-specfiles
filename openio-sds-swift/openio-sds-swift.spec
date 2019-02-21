@@ -6,7 +6,7 @@ Name:           openio-sds-swift
 Version:        1.4.0
 Release:        1%{?dist}
 %define         tarversion %{version}
-Source0:        https://github.com/open-io/oio-swift/archive/%{tarversion}.tar.gz
+Source0:        https://github.com/kamel-rahim/oio-swift/archive/%{tarversion}.tar.gz
 %else
 # Testing purpose only. Do not modify.
 %define         date %(date +"%Y%m%d%H%M")
@@ -14,7 +14,7 @@ Source0:        https://github.com/open-io/oio-swift/archive/%{tarversion}.tar.g
 Version:        test%{date}.git%{shortcommit}
 Release:        0%{?dist}
 %define         tarversion %{tag}
-Source0:        https://github.com/open-io/oio-swift/archive/%{tarversion}.tar.gz
+Source0:        https://github.com/kamel-rahim/oio-swift/archive/%{tarversion}.tar.gz
 Epoch:          1
 %endif
 
