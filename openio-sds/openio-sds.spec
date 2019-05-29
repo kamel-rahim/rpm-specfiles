@@ -13,7 +13,7 @@ Version:        4.2.2
 Release:        2%{?dist}
 %define         tarversion %{version}
 %define         targetversion %{version}
-Source0:        https://github.com/open-io/oio-sds/archive/%{tarversion}.tar.gz
+Source0:        https://github.com/kamel-rahim/oio-sds/archive/%{tarversion}.tar.gz
 %else
 # Testing purpose only. Do not modify.
 %define         date %(date +"%Y%m%d%H%M")
@@ -22,7 +22,7 @@ Version:        test%{date}.git%{shortcommit}
 Release:        0%{?dist}
 %define         tarversion %{tag}
 %define         targetversion 4.2.0
-%define         git_repo https://github.com/open-io/oio-sds
+%define         git_repo https://github.com/kamel-rahim/oio-sds
 Source0:        %{git_repo}/archive/%{tarversion}.tar.gz
 Epoch:          1
 %endif

@@ -6,8 +6,8 @@ Summary:        The swift3 plugin for OpenIO SDS Swift
 %if %{?_with_test:0}%{!?_with_test:1}
 Version:        1.12.6
 Release:        1%{?dist}
-URL:            https://github.com/open-io/swift3
-Source0:        https://github.com/open-io/swift3/archive/%{version}-openio.tar.gz
+URL:            https://github.com/kamel-rahim/swift3
+Source0:        https://github.com/kamel-rahim/swift3/archive/%{version}-openio.tar.gz
 %else
 # Testing purpose only. Do not modify.
 %define         date %(date +"%Y%m%d%H%M")
@@ -15,8 +15,8 @@ Source0:        https://github.com/open-io/swift3/archive/%{version}-openio.tar.
 Version:        test%{date}.git%{shortcommit}
 Release:        0%{?dist}
 %define         tarversion %{tag}
-URL:            https://github.com/open-io/swift3
-Source0:        https://github.com/open-io/swift3/archive/%{tarversion}.tar.gz
+URL:            https://github.com/kamel-rahim/swift3
+Source0:        https://github.com/kamel-rahim/swift3/archive/%{tarversion}.tar.gz
 Epoch:          1
 %endif
 
